@@ -1,0 +1,23 @@
+# Data
+data/*.csv
+data/processed/
+*.parquet
+
+# Models & Artifacts
+models/trained_models/*.pkl
+models/artifacts/*.pkl
+models/artifacts/*.json
+outputs/
+
+# Environment & Logs
+logs/*.log
+__pycache__/
+.ipynb_checkpoints/
+venv/
+.env
+
+# Submission Folder (Exclude everything except the ZIP if needed, but we'll include source)
+FraudDetection_Rohan/data/
+FraudDetection_Rohan/dashboard/model.pkl
+FraudDetection_Rohan.zip
+submission/

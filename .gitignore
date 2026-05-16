@@ -1,12 +1,15 @@
 # Data
 data/*.csv
-data/processed/
-*.parquet
+data/processed/processed_train_original.parquet
 
 # Models & Artifacts
-models/trained_models/*.pkl
-models/artifacts/*.pkl
-models/artifacts/*.json
+models/trained_models/
+!models/trained_models/best_model.pkl
+models/artifacts/
+!models/artifacts/feature_columns.pkl
+!models/artifacts/label_encoders.pkl
+!models/artifacts/imputer_values.pkl
+!models/artifacts/threshold.json
 outputs/
 
 # Environment & Logs
@@ -16,8 +19,7 @@ __pycache__/
 venv/
 .env
 
-# Submission Folder (Exclude everything except the ZIP if needed, but we'll include source)
-FraudDetection_Rohan/data/
-FraudDetection_Rohan/dashboard/model.pkl
+# Submission Folder
+FraudDetection_Rohan/
 FraudDetection_Rohan.zip
 submission/

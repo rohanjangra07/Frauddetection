@@ -212,7 +212,7 @@ analysis.ipynb
 ## Run Streamlit Dashboard
 
 ```bash
-streamlit run streamlit_app.py
+streamlit run dashboard/app.py
 ```
 
 ---

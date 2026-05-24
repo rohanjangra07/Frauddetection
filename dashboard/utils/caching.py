@@ -65,9 +65,6 @@ def load_processed_data():
     try:
         df = pd.read_parquet(path_to_load)
         
-        if is_sample:
-            st.warning("⚠️ Running in **Simulation Mode** using sample deployment data.")
-        
         # Strict validation of required inference schema
         required_cols = ['TransactionID', 'TransactionAmt', 'prediction_probability', 'Risk_Tier']
         missing_cols = [col for col in required_cols if col not in df.columns]

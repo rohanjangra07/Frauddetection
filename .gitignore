@@ -13,7 +13,8 @@ models/artifacts/*
 !models/artifacts/drift_monitoring.json
 !models/artifacts/training_feature_stats.json
 !models/artifacts/calibration_model.pkl
-outputs/
+outputs/*
+!outputs/predictions.parquet
 
 # Environment & Logs
 logs/*.log

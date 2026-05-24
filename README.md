@@ -187,7 +187,7 @@ Deploy interactive Streamlit dashboard for real-time fraud analytics.
 Clone the repository:
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/rohanjangra07/Frauddetection
 cd Fraud-Detection-System
 ```
 

@@ -3,13 +3,16 @@ data/*.csv
 data/processed/processed_train_original.parquet
 
 # Models & Artifacts
-models/trained_models/
+models/trained_models/*
 !models/trained_models/best_model.pkl
-models/artifacts/
+models/artifacts/*
 !models/artifacts/feature_columns.pkl
 !models/artifacts/label_encoders.pkl
 !models/artifacts/imputer_values.pkl
 !models/artifacts/threshold.json
+!models/artifacts/drift_monitoring.json
+!models/artifacts/training_feature_stats.json
+!models/artifacts/calibration_model.pkl
 outputs/
 
 # Environment & Logs
